@@ -9,9 +9,18 @@
  */
 public class cadastroVIEW extends javax.swing.JFrame {
 
-    /**
-     * Creates new form cadastroVIEW
-     */
+
+    public class Main {
+
+        public static void main(String[] args) {
+            java.awt.EventQueue.invokeLater(new Runnable() {
+                public void run() {
+                    new cadastroVIEW().setVisible(true);  // Define cadastroVIEW como tela inicial
+                }
+            });
+        }
+    }
+    
     public cadastroVIEW() {
         initComponents();
     }
